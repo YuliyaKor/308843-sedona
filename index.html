@@ -73,20 +73,42 @@
         <h2 class="visually-hidden">Поиск гостиниц</h2>
         <b>заинтересовались?</b>
         <p>укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">поиск гостиницы в седоне</button>
+        <button class="hotel-search-button" type="button">поиск гостиницы в седоне</button>
         <img src="img/map.jpg" width="1200" height="593" alt="Карта">
       </section>
       <section class="visually-hidden search-form">
         <h2 class="visually-hidden">Форма поиска гостиниц</h2>
-        <!--здесь будет форма  <form></form> -->
+        <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="hotel-search-item">
+            <label for="date-start">дата заезда:</label>
+            <input type="text" id="date-start" name="date-start" value="" placeholder="24 апреля 2017">
+          </p>
+          <p class="hotel-search-item">
+            <label for="date-finish">дата выезда:</label>
+            <input type="text" id="date-finish" name="date-finish" value="" placeholder="4 июля 2017">
+          </p>
+          <p class="hotel-search-item">
+            <label for="adults">взрослые:</label>
+            <button type="button" class="value-low">-</button>
+            <input type="number" id="adults" name="adults" value="2">
+            <button type="button" class="value-up">+</button>
+          </p>
+          <p class="hotel-search-item">
+            <label for="children">дети:</label>
+            <button type="button" class="value-low">-</button>
+            <input type="number" id="children" name="children" value="0">
+            <button type="button" class="value-up">+</button>
+          </p>
+          <button class="hotel-search-form-button" type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
       <p class="hashtag">#visitsedona</p>
       <ul>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютуб</a></li>
+        <li><a class="social-button" href="https://twitter.com">Твиттер</a></li>
+        <li><a class="social-button" href="https://www.facebook.com">Фейсбук</a></li>
+        <li><a class="social-button" href="https://www.youtube.com">Ютуб</a></li>
       </ul>
       <p class="copyright">website by
         <a class="copyright-button" href="https://htmlacademy.ru">
