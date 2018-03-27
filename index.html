@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="main-body">
+  <body class="main-body container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -21,15 +21,17 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Курорт Седона</h1>
-      <p class="slogan"><b>седона - небольшой городок в аризоне,<br>
-        заслуживающий большего!</b></p>
-      <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      <div class="slogan-block">
+        <p class="slogan"><b>седона - небольшой городок в аризоне,<br>
+          заслуживающий большего!</b></p>
+        <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      </div>
       <section class="advantages sedona-sity">
-        <h2>настоящий городок</h2>
-        <p>- №1 -</p>
-        <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <h2>настоящий городок</h2>
+          <p>- №1 -</p>
+          <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
         <img src="img/sedona-sity.jpg" width="800" height="400" alt="Настоящий городок Седона">
       </section>
       <section class="advantages addition">
@@ -81,7 +83,7 @@
         <button class="hotel-search-button" type="button">поиск гостиницы в седоне</button>
         <img src="img/map.jpg" width="1200" height="593" alt="Карта">
       </section>
-      <section class="visually-hidden search-form">
+      <section class="search-form"> <!--  visually-hidden -->
         <h2 class="visually-hidden">Форма поиска гостиниц</h2>
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="hotel-search-item">
@@ -92,18 +94,20 @@
             <label for="date-finish">дата выезда:</label>
             <input type="text" id="date-finish" name="date-finish" value="" placeholder="4 июля 2017">
           </p>
-          <p class="hotel-search-item">
-            <label for="adults">взрослые:</label>
-            <button type="button" class="value-low">-</button>
-            <input type="text" id="adults" name="adults" value="2">
-            <button type="button" class="value-up">+</button>
-          </p>
-          <p class="hotel-search-item">
-            <label for="children">дети:</label>
-            <button type="button" class="value-low">-</button>
-            <input type="text" id="children" name="children" value="0">
-            <button type="button" class="value-up">+</button>
-          </p>
+          <div class="search-item-people">
+            <p class="hotel-search-item">
+              <label for="adults">взрослые:</label>
+              <button type="button" class="value-low">-</button>
+              <input type="text" id="adults" name="adults" value="2">
+              <button type="button" class="value-up">+</button>
+            </p>
+            <p class="hotel-search-item">
+              <label for="children">дети:</label>
+              <button type="button" class="value-low">-</button>
+              <input type="text" id="children" name="children" value="0">
+              <button type="button" class="value-up">+</button>
+            </p>
+          </div>
           <button class="hotel-search-form-button" type="submit">Найти</button>
         </form>
       </section>

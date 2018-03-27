@@ -1,3 +1,7 @@
+html {
+  background-color: #f2f2f2;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,12 +13,14 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
+  box-shadow: 0 3px 20px 7px #e2e2e2;
 }
 
 .main-body {
-  background-image: url("../img/Welcome.jpg"), url("../img/Shape-line.jpg"), url("../img/backgroundphoto.jpg");
+
+  background-image: url("../img/Shape-line.png"), url("../img/Welcome.png"), url("../img/backgroundphoto.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 16%, center 4%, center top;
 }
 
 a {
@@ -82,10 +88,10 @@ h2 {
 .other-general {
   background-color: #eeeeee;
 }
-
-/* .visually-hidden {
+ /* ----------Скрытые элементы--------------*/
+.visually-hidden {
   display: none;
-} */
+}
 
 .interesting {
   font-size: 30px;
@@ -345,4 +351,205 @@ h2 {
   width: 110px;
   height: 27px;
   background-color: #f2f2f2;
+}
+/*-------------------Сетка----------------*/
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-header-logo {
+  position: absolute;
+  margin: auto;
+  top: 0; left: 45%; bottom: 0; right: auto;
+}
+
+.site-navigation {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  justify-content: space-around;
+  height: 56px;
+  align-items: center;
+
+}
+
+.slogan-block {
+  display: flex;
+  background: #ffffff;
+  margin-top: 513px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 205px;
+}
+
+.sedona-sity,
+.hellbridge {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 263px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sedona-sity h2,
+.hellbridge h2 {
+  width: 153px;
+}
+
+.sedona-sity p,
+.hellbridge p {
+  width: 300px;
+}
+
+.sedona-sity img {
+  align-self: flex-end;
+}
+
+.hellbridge img {
+  align-self: flex-start;
+}
+
+.advantages-addition-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  padding-bottom: 80px;
+}
+
+.advantages-addition-item {
+  width: 285px;
+}
+
+.advantages-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  padding-right: 65px;
+}
+
+.advantages-item {
+  width: 272px;
+}
+
+.interesting {
+  margin-top: 57px;
+}
+
+.hotel-search-button {
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 35px 100px;
+  align-items: center;
+}
+.hotel-search-form {
+  display: flex;
+  flex-direction: column;
+  height: 395px;
+  width: 568px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 3px 20px 1px #e2e2e2;
+}
+
+.search-item-people {
+  display: flex;
+  width: 458px;
+  justify-content: space-between;
+}
+
+.hotel-search-form-button {
+  margin-top: 45px;
+}
+
+.hotel-filters-form {
+  display: flex;
+  min-height: 218px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 28px;
+}
+
+.price-block {
+  margin-left: 325px;
+}
+
+.hotel-filters-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  min-height: 125px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.hotel-sort {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 87px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.sort-list {
+  display: flex;
+  width: 783px;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+.sort-up {
+  margin-left: 350px;
+}
+
+.sort-result-item {
+  display: flex;
+  border-bottom: 2px solid #e5e5e5;
+  min-height: 150px;
+  align-items: center;
+}
+
+.hotel-rating {
+  margin-left: 520px;
+}
+
+.item-info {
+  width: 270px;
+  margin-left: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.item-info h3 {
+  margin: 0;
 }
