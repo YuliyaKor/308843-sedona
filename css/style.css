@@ -672,3 +672,30 @@ align-items: center;
   background-repeat: no-repeat;
   background-position: 24px top, 46px top, 68px top, 90px top;
 }
+.social {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.social-button {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background: #81b3d2;
+  font-size: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social-twitter {
+  background-image: url("../img/twitter.svg");
+}
+
+.social-facebook {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.social-youtube {
+  background-image: url("../img/youtube.svg");
+}
