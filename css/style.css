@@ -55,16 +55,25 @@ a {
   color: #766357;
 }
 
-.slogan {
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-}
-
 .container p {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+}
+
+.slogan b {
+  display: inline-block;
+  padding-top: 2px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 360px;
+  margin-right: 360px;
+}
+
+.slogan {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 h2 {
@@ -109,6 +118,7 @@ h2 {
   text-align: center;
   background-color: #766357;
   border: none;
+  position: relative;
 }
 .hotel-search-button:hover,
 .hotel-search-button:focus {
@@ -217,7 +227,7 @@ h2 {
 
 .hashtag {
   font-size: 21px;
-  flex-basis: 33%;
+  flex-basis: 402px;
 }
 
 .copyright {
@@ -808,7 +818,8 @@ align-items: center;
 }
 
 .hotel-filters-button {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: 95px;
   width: 137px;
   padding-left: 0;
   padding-right: 0;
@@ -909,6 +920,7 @@ align-items: center;
 .stars {
   align-self: flex-end;
   color: transparent;
+  width: 110px;
 }
 
 .two-stars {
@@ -965,11 +977,11 @@ align-items: center;
 
 @keyframes bounce {
   0% {
-    transform: translateY(-1000px);
+    opacity: 0;
   }
 
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 .hotel-search {
